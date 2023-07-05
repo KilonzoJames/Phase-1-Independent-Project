@@ -1,0 +1,208 @@
+{
+  "assessments": [
+    {
+      "id": "1",
+      "question": "What type of a language is HTML?",
+      "choices": [
+        {
+          "text": "Network Protocol",
+          "correct": false
+        },
+        {
+          "text": "Scripting Language",
+          "correct": false
+        },
+        {
+          "text": "Markup Language",
+          "correct": true
+        },
+        {
+          "text": "Programming Language",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "question": "What should be the first tag in any HTML Document?",
+      "choices": [
+        {
+          "text": "<head>",
+          "correct": false
+        },
+        {
+          "text": "<html>",
+          "correct": false
+        },
+        {
+          "text": "<!doctype html>",
+          "correct": true
+        },
+        {
+          "text": "<title>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "question": "What tag is used to display a picture in a HTML page?",
+      "choices": [
+        {
+          "text": "Img",
+          "correct": true
+        },
+        {
+          "text": "Picture",
+          "correct": false
+        },
+        {
+          "text": "Image",
+          "correct": false
+        },
+        {
+          "text": "Src",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "question": "HTML are web pages read and rendered by",
+      "choices": [
+        {
+          "text": "Server",
+          "correct": false
+        },
+        {
+          "text": "Compiler",
+          "correct": false
+        },
+        {
+          "text": "Interpreter",
+          "correct": false
+        },
+        {
+          "text": "Web Browser",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "question": "What is the correct HTML tag for inserting a line break?",
+      "choices": [
+        {
+          "text": "<br />",
+          "correct": true
+        },
+        {
+          "text": "<break />",
+          "correct": false
+        },
+        {
+          "text": "<nbsp>",
+          "correct": false
+        },
+        {
+          "text": "<lb />",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "question": "What is the correct HTML for making a hyperlink?",
+      "choices": [
+        {
+          "text": "url='http://mcqsets.com'>MCQ Sets Quiz",
+          "correct": false
+        },
+        {
+          "text": " <a href='http://mcqsets.com'>MCQ Sets Quiz</a>",
+          "correct": true
+        },
+        {
+          "text": "<http://mcqsets.com</a>",
+          "correct": false
+        },
+        {
+          "text": "<a name='http://mcqsets.com'>MCQ Sets Quiz</a>",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "question": "HTML documents are saved in",
+      "choices": [
+        {
+          "text": "None of above",
+          "correct": false
+        },
+        {
+          "text": "Special binary format",
+          "correct": false
+        },
+        {
+          "text": "Machine language codes",
+          "correct": false
+        },
+        {
+          "text": "ASCII text",
+          "correct": true
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "id": "1",
+      "rank": "1",
+      "playerName": "Jonathan",
+      "score": "10"
+    },
+    {
+      "rank": "2",
+      "playerName": "James Bond",
+      "score": "7",
+      "id": "2"
+    },
+    {
+      "rank": "3",
+      "playerName": "Declan Rice",
+      "score": "8",
+      "id": "3"
+    },
+    {
+      "rank": 4,
+      "playerName": "Mikel Arteta",
+      "score": 8,
+      "id": "aIupIn-"
+    },
+    {
+      "rank": 5,
+      "playerName": "Mbappe",
+      "score": 7,
+      "id": "b6Jaw-F"
+    },
+    {
+      "rank": 6,
+      "playerName": "Guardiola",
+      "score": 7,
+      "id": "Ub3Xrzf"
+    },
+    {
+      "rank": 7,
+      "playerName": "Gabriel MartInelli",
+      "score": 7,
+      "id": "3TDlbNA"
+    },
+    {
+      "rank": 8,
+      "playerName": "James M",
+      "score": 2,
+      "id": "uN2JPPA"
+    }
+  ]
+}
