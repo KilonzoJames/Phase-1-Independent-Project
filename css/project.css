@@ -9,11 +9,11 @@ body {
     font-family: Arial, Helvetica, sans-serif ;
     position: relative;
     margin: 0;
-    background-color: rgb(233, 238, 238);
+    background-color: rgb(192, 212, 228);
   }
 nav{
     display: flex;
-    background-color:rgb(48, 164, 199);
+    background-color: rgb(46, 139, 216);
     align-items: center;
     justify-content: space-around;
     color: white;
@@ -30,10 +30,10 @@ main {
     font-size: xx-large;
     text-align: center;
     font: normal xx-large auto Arial;
-    box-shadow: 0 0 50px 3px rgb(24, 24, 189);
+    box-shadow: 0 0 50px 8px rgb(24, 24, 189);
 }
 #main1{
-    height: 50vh;
+    height: 63vh;
     width: 15cm;
 }
 #main2{
@@ -41,27 +41,21 @@ main {
     width: 20cm;
     position: relative;
 }
-.box{
-    display: grid;
-    gap: 10px;
-    margin: 20px;
-}
-.box label{
-    grid-row: 1;
+.form-label{
+    grid-row: 7;
     color: rgb(0, 60, 255);
     font-weight: lighter;
     font-family: 'Times New Roman', Times, serif;
-    font: 1cm;
+    font: 2cm;
 }
-.box input{
+.form-control{
     grid-row: 2;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 8px;
     background-color: #f8f8f8;
     width: 75%;
-    height: .6cm;
-    margin: 0 auto;
+    height: .8cm;
 }
 #button1{
     width: 80%;
@@ -100,6 +94,13 @@ main {
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
+.dropdown button{
+    width:200px;
+    height:50px;
+    font-size: x-large;
+    padding: 1px;
+    border-radius: 5px;
+}
 #previous{
     position: absolute;
     bottom: 0;
@@ -111,7 +112,7 @@ main {
     right: 0;
 }
 a{
-    color: rgb(11, 17, 104);
+    color: rgb(89, 93, 150);
 }
 footer{
     position: fixed;
@@ -119,14 +120,20 @@ footer{
     width: 100%;
     margin-bottom: auto;    
 }
-.quiz-container{
-    height: 5%;
+th a{
+    color: red;
+    font-size: x-large ;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
 .quiz-container h1{
     color:navy;
 }
 #page2{
     background: url(../assets/pxfuel.jpg);
+}
+#page1{
+    background: url(../assets/brady-bellini-_hpk_92Crhs-unsplash.jpg);
 }
 table {
     width: 100%;
@@ -150,13 +157,33 @@ th, td {
     text-align: left;
 }
 #appname{
-    color: #3f4d99;
+    color: #1d1379;
     text-align: center;
     font-weight: bolder;
     font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
 }
   
- 
+  .dropdown {
+    position: absolute;
+    top: 10px;
+    right: 100px;
+  }
   
+  #toggleButton {
+    position: relative;
+    z-index: 2;
+  }
   
+  #dropdownForm {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #37aad8;
+    padding: 10px;
+    z-index: 1;
+  }
+  .adminPosting{
+    display: grid;
+  }

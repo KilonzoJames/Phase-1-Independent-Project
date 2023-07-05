@@ -153,6 +153,50 @@
           "correct": true
         }
       ]
+    },
+    {
+      "id": "8",
+      "question": "Where is the correct place to insert a JavaScript?",
+      "choices": [
+        {
+          "text": "The <head> section",
+          "correct": false
+        },
+        {
+          "text": "The <body> section",
+          "correct": false
+        },
+        {
+          "text": "The <footer>",
+          "correct": false
+        },
+        {
+          "text": "Both the <head> section and the <body> section are correct",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "question": "What is the correct JavaScript syntax for opening a new window called w2?",
+      "choices": [
+        {
+          "text": "w2 = window.new('http://www.w3schools.com');",
+          "correct": false
+        },
+        {
+          "text": "w2 = window.open('http://www.w3schools.com');",
+          "correct": true
+        },
+        {
+          "text": "w2 = window.touch('http://www.w3schools.com');",
+          "correct": false
+        },
+        {
+          "text": "None of above",
+          "correct": false
+        }
+      ]
     }
   ],
   "profiles": [
@@ -178,31 +222,37 @@
       "rank": 4,
       "playerName": "Mikel Arteta",
       "score": 8,
-      "id": "aIupIn-"
+      "id": "4"
     },
     {
       "rank": 5,
       "playerName": "Mbappe",
       "score": 7,
-      "id": "b6Jaw-F"
+      "id": "5"
     },
     {
       "rank": 6,
       "playerName": "Guardiola",
       "score": 7,
-      "id": "Ub3Xrzf"
+      "id": "6"
     },
     {
       "rank": 7,
       "playerName": "Gabriel MartInelli",
       "score": 7,
-      "id": "3TDlbNA"
+      "id": "7"
     },
     {
-      "rank": 8,
-      "playerName": "James M",
-      "score": 2,
-      "id": "uN2JPPA"
+      "id": "9",
+      "rank": 9,
+      "playerName": "Balotelli",
+      "score": 6
+    },
+    {
+      "id": "10",
+      "rank": 10,
+      "playerName": "Papa Jones",
+      "score": 4
     }
   ]
 }

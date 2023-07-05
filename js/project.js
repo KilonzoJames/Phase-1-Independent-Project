@@ -118,7 +118,13 @@ function appendToLeaderboard(profiles){
                   score++;
                 } else {
                   btn.style.backgroundColor = "red";
-                }
+                }  
+                const buttons = Array.from(answerBtn.children);
+                buttons.forEach(button => {
+                  if (button !== btn) {
+                    button.disabled = true;
+                  }
+                });
               });
               answerBtn.appendChild(btn);
             });
@@ -131,6 +137,11 @@ function appendToLeaderboard(profiles){
             displayQuestion();
         } else if(currentIndex===assessments.length){
             profileFetch().then(rank=>createProfileRank({rank, playerName, score }));
+            let page2=document.querySelector("#page2");
+            let leaderboard=document.querySelector("#page3");
+            page2.classList.remove("active");
+            leaderboard.classList.add("active");
+            alert(`${playerName}, your score is ${score}! Now go out and play.`)
         }
         else {
         console.log('Quiz completed');
@@ -156,7 +167,10 @@ function displayScore(){
     myScore.innerHTML=`${score}`
 }
 function createProfileRank(profile){
+    const maxId = Math.max(...profiles.map(profile => parseInt(profile.id)));
+    const nextId = (maxId + 1).toString();
     const addProfile={
+        id:nextId,
         rank:profile.rank,
         playerName:profile.playerName,
         score:profile.score
@@ -176,3 +190,24 @@ function createProfileRank(profile){
         .catch(error => {console.error('Error:', error);
         });
 }
+let toggleButton = document.getElementById('toggleButton');
+let dropdownForm = document.getElementById('dropdownForm');
+
+toggleButton.addEventListener('click', function() {
+  if (dropdownForm.style.display === 'none') {
+    dropdownForm.style.display = 'block';
+  } else {
+    dropdownForm.style.display = 'none';
+  }
+});
+
+document.querySelector('#dropdownForm').addEventListener('submit',(e)=>{e.preventDefault();
+   let adminInput=e.target.adminName.value;
+   welcomeAdmin=document.querySelector("#page4 span");
+   welcomeAdmin.textContent=`${adminInput}!`;
+   alert("Welcome back!");
+   const page1 = document.getElementById('page1');
+   const page4 = document.getElementById('page4');
+   page1.classList.remove('active');
+   page4.classList.add('active');
+   });
