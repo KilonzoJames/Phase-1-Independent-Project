@@ -105,7 +105,8 @@ function appendToLeaderboard(profiles){
     function displayQuestion() {
         let currentAssessment = assessments[currentIndex];
         let questionNumber=currentIndex+1;
-        quizNumber.textContent=currentAssessment.id;
+        let quizFraction=currentAssessment.id+"/"+ assessments.length;
+        quizNumber.textContent=quizFraction;
         questionElement.innerHTML =questionNumber+". " + currentAssessment.question;
         answerBtn.innerHTML = "";
         currentAssessment.choices.forEach(choice=>{
@@ -137,6 +138,7 @@ function appendToLeaderboard(profiles){
             displayQuestion();
         } else if(currentIndex===assessments.length){
             profileFetch().then(rank=>createProfileRank({rank, playerName, score }));
+            
             let page2=document.querySelector("#page2");
             let leaderboard=document.querySelector("#page3");
             page2.classList.remove("active");
@@ -145,7 +147,7 @@ function appendToLeaderboard(profiles){
         }
         else {
         console.log('Quiz completed');
-        displayScore()}
+       }
         }); 
     previousBtn.addEventListener('click', function(){
         currentIndex--;
@@ -163,7 +165,7 @@ function usernameGreeting(input){
    greeting.textContent=`Welcome, ${input}!`;
 }
 function displayScore(){
-    let myScore=document.querySelector("#page2 span")
+    let myScore=document.querySelector("#myScore span")
     myScore.innerHTML=`${score}`
 }
 function createProfileRank(profile){

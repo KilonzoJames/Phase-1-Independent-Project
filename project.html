@@ -53,22 +53,22 @@
         </header>
         <main id="main1">
             <div class="Second">
-                <form id="form1">
+                <form id="form1" class="borderStyling">
                     <div class="box">
                       <label for="name" class="form-label">Username</label>
-                      <input type="name" placeholder="Enter your name here" required class="form-control" id="exampleInputName"> 
+                      <input type="name" placeholder="Enter your name here" minlength="3" class="form-control" id="exampleInputName"> 
                     </div>
                     <div class="box">
-                      <label for="password" class="form-label">Password</label>
-                      <input type="password" placeholder="Enter password" minlength="8" required autocomplete="new-password"
+                      <label for="password" class="form-label">Game Code</label>
+                      <input type="password" placeholder="Enter the game code here" minlength="8" required autocomplete="new-password"
                        class="form-control" id="exampleInputPassword">
                     </div>
                     <div class="box form-check">
                       <input type="checkbox" class="form-checkbox" id="exampleCheck">
-                      <label class="form-check-label" for="exampleCheck">Remember me</label>
+                      <label class="form-check-label" for="exampleCheck"></label>
                     </div>
-                    <button type="submit" id="button1" class="btn-up">Submit</button>
-                  </form>
+                    <button type="submit" id="button1" class="btn-up">Play a game</button>
+                </form>
             </div>
         </main>
         <footer>
@@ -95,38 +95,32 @@
                     <h2>
                         <a href="#page3">Leaderboard</a>
                     </h2>
-                    <h2>
+                    <h2 id="myScore">
                         My Score: <span>0</span>
                     </h2>
                 </nav>
             </div>
         </header>
         <main id="main2">
-            <div>
-                <div class="quiz-container">
-                    <h1>Quiz Trivia</h1>
-                    <div class="question">
-                      <h2>Question <span>1</span></h2>
-                      <p id="pQuestion">Question content goes here.</p>
-                      <div id="answerBtn">
-                     <button id="btn1" class="btn">1</button>
-                     <button id="btn2" class="btn">2</button>
-                     <button id="btn3" class="btn">3</button>
-                     <button id="btn4" class="btn">4</button>
-                     </div>
-                    </div>
-                    <div id="space" >
-                    <button class="nav-button" id="previous">Previous</button>
-                    <button class="nav-button" id="next">Next</button>
-                    </div>
-                  </div>              
-            </div>
+          <div id="quiz-container" class="borderStyling">
+              <h1>Quiz Trivia</h1>
+              <div class="question">
+                  <h2><span>1</span></h2>
+                  <p id="pQuestion">Question content goes here.</p>
+                  <div id="answerBtn">
+                  <button id="btn1" class="btn">1</button>
+                  <button id="btn2" class="btn">2</button>
+                  <button id="btn3" class="btn">3</button>
+                  <button id="btn4" class="btn">4</button>
+                  </div>
+                  </div>
+                  <div id="space" >
+                  <button class="nav-button" id="previous">Previous</button>
+                  <button class="nav-button" id="next">Next</button>
+                  </div>
+              </div>              
+          </div>
         </main>
-        <!-- <footer>
-            <div>
-                <button class="nav-button" id="leaderboardBtn">Leaderboard</button>
-            </div>
-        </footer> -->
     </div>
     <div id="page3" class="page">
         <table>
@@ -165,8 +159,12 @@
             </nav>
         </header>
         <main id="main4">
-            <div class="adminPosting">
-                <form>
+            <div>
+                <form  class="borderStyling" id="adminPosting">
+                    <div class="adminQ">
+                        <label for="testname" class="form-label">Quiz Name</label>
+                        <input type="testname" id="quizN"  class="form-control" required>
+                      </div>
                     <div class="adminQ">
                       <label for="name" class="form-label">Questions</label>
                       <input type="name" id="postQuestions"  class="form-control" required>
@@ -175,11 +173,7 @@
                       <label for="name" class="form-label">Answers</label>
                       <input type="name"  id="postAnswers"  class="form-control" required>
                     </div>
-                    <div class="adminQ">
-                      <input type="checkbox">
-                      <label>Check me out</label>
-                    </div>
-                    <button type="submit" class="nav-button btn-primary">Submit Questions</button>
+                    <button type="submit" class="btn btn-primary" id="adminBtn">Submit Questions</button>
                   </form>
             </div>
         </main>
