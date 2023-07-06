@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-Quiz App</title>
+    <link rel="stylesheet" href="../css/project.css">
+</head>
+<body>
+    <div id="page1" class="page active">
+        <header>
+            <div class="First">
+                <nav>
+                    <h1>
+                        WELCOME
+                    </h1>
+                    <h2>
+                        <a href="#page3">Leaderboard</a>
+                    </h2>
+                    <div>
+                        <div class="dropdown">
+                            <button type="button" id="toggleButton" class="nav-button btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                              Admin Login
+                            </button>
+                            <form id="dropdownForm" style="display: none;">
+                              <div class="drop">
+                                <label for="name" class="form-label">Username</label>
+                                <input type="name" class="form-control" id="adminName" required placeholder="Enter your name here">
+                              </div>
+                              <div class="drop">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" minlength="8" required placeholder="Enter Password">
+                              </div>
+                              <div class="drop">
+                                <div class="form-check">
+                                  <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                                  <label class="form-check-label" for="dropdownCheck2">
+                                    Remember me
+                                  </label>
+                                </div>
+                              </div>
+                              <button type="submit" class="nav-button btn-primary">Sign in</button>
+                            </form>
+                          </div>
+                    </div>
+                </nav>
+            </div>
+            <div>
+                <h1 id="appname">
+                    Q-Quiz App
+                </h1>
+            </div>
+        </header>
+        <main id="main1">
+            <div class="Second">
+                <form id="form1" class="borderStyling">
+                    <div class="box">
+                      <label for="name" class="form-label">Username</label>
+                      <input type="name" placeholder="Enter your name here" minlength="3" required class="form-control" id="exampleInputName"> 
+                    </div>
+                    <div class="box">
+                      <label for="password" class="form-label">Game Code</label>
+                      <input type="password" placeholder="Enter the game code here" minlength="8" required autocomplete="new-password"
+                       class="form-control" id="exampleInputPassword">
+                    </div>
+                    <div class="box form-check">
+                      <input type="checkbox" class="form-checkbox" id="exampleCheck">
+                      <label class="form-check-label" for="exampleCheck"></label>
+                    </div>
+                    <button type="submit" id="button1" class="btn-up">Play a game</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="Third">
+                <nav id="Low">
+                    <ul>
+                        <li>Contact Us</li>
+                    </ul>
+                    <h3>Created in 2023 ©</h3>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <div  id="page2" class="page">
+        <header>
+            <div>
+                <nav>
+                    <h1 id="greeting">
+                        WELCOME USER
+                    </h1>
+                    <h2>
+                        <a href="#page1">Page 1</a>
+                    </h2>
+                    <h2>
+                        <a href="#page3">Leaderboard</a>
+                    </h2>
+                    <h2 id="myScore">
+                        My Score: <span>0</span>
+                    </h2>
+                </nav>
+            </div>
+        </header>
+        <main id="main2">
+          <div id="quiz-container" class="borderStyling">
+              <h1>Quiz Trivia</h1>
+              <div class="question">
+                  <h2><span>1</span></h2>
+                  <p id="pQuestion">Question content goes here.</p>
+                  <div id="answerBtn">
+                  <button id="btn1" class="btn">1</button>
+                  <button id="btn2" class="btn">2</button>
+                  <button id="btn3" class="btn">3</button>
+                  <button id="btn4" class="btn">4</button>
+                  </div>
+                  </div>
+                  <div id="space" >
+                  <button class="nav-button" id="previous">Previous</button>
+                  <button class="nav-button" id="next">Next</button>
+                  </div>
+              </div>              
+          </div>
+        </main>
+    </div>
+    <div id="page3" class="page">
+        <table>
+            <caption>Leaderboard</caption>
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Player Name</th>
+                <th>Score</th>
+                <th id="Refresh"><a href="#" onclick="location.reload()">Refresh the page.</a></th>
+              </tr>
+            </thead>
+            <tbody id="profileData">
+              <tr>
+                <td id="ranktd">1</td>
+                <td id="playerNametd">Jonathan Martinelli</td>
+                <td id="scoretd">100</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <div id="page4" class="page">
+        <header>
+            <nav>
+                <div>
+                    <h1>
+                        WELCOME <span>ADMIN</span>
+                    </h1>
+                    <h2>
+                        <a href="#page1">Page 1</a>
+                    </h2>
+                    <h2>
+                        <a href="#page3">Leaderboard</a>
+                    </h2>
+                </div>
+            </nav>
+        </header>
+        <main id="main4">
+            <div>
+                <form  class="borderStyling" id="adminPosting">
+                    <div class="adminQ">
+                        <label for="testname" class="form-label">Quiz Name</label>
+                        <input type="testname" id="quizN"  class="form-control" required>
+                      </div>
+                    <div class="adminQ">
+                      <label for="name" class="form-label">Questions</label>
+                      <input type="name" id="postQuestions"  class="form-control" required>
+                    </div>
+                    <div class="adminQ">
+                      <label for="name" class="form-label">Answers</label>
+                      <input type="name"  id="postAnswers"  class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="adminBtn">Submit Questions</button>
+                  </form>
+            </div>
+        </main>
+    </div>
+    <script src="js/project.js"></script>
+</body>
+</html>
