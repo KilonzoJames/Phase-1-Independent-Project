@@ -184,7 +184,7 @@ function createProfileRank(profile){
     },
     body: JSON.stringify(addProfile)
     }
-    return fetch('http://localhost:3000/profiles', submitData)
+    return fetch('https://my-json-server.typicode.com/KilonzoJames/Phase-1-Independent-Project/profiles', submitData)
       .then(response => response.json())
       .then(data => {console.log('Data:', data);
       displayScore(score);
