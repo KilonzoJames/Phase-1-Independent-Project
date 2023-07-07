@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', async() => {
     });
 })
 function fetchAssessments(){
-    return fetch(`http://localhost:3000/assessments`)
+    return fetch(`https://my-json-server.typicode.com/KilonzoJames/Phase-1-Independent-Project/assessments`)
     .then(res=>res.json())
     .then(data=> {
         assessments = data;
@@ -52,7 +52,7 @@ function fetchAssessments(){
     }); 
    }
 function profileFetch(){
-    return fetch(`http://localhost:3000/profiles`)
+    return fetch(`https://my-json-server.typicode.com/KilonzoJames/Phase-1-Independent-Project/profiles`)
     .then(res=>res.json())
     .then(data=> {
         profiles = data;
